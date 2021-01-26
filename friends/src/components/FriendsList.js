@@ -17,7 +17,7 @@ class FriendsList extends React.Component{
         .get('/friends')
         .then((res)=>{
             console.log("data: ", res.data);
-
+ 
             this.setState({
                 friends: res.data
             });
@@ -34,7 +34,7 @@ class FriendsList extends React.Component{
                 <p>{this.state.friends.map(f=>{
                     return <p>{f.name}</p>
                 })}</p>
-            </div>
+            </div> 
         )
     }
     
